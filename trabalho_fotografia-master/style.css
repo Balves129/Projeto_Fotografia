@@ -161,7 +161,7 @@ nav{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(to bottom, #0f687e, #37badb);
+    background: linear-gradient(245deg, #13203A 60%, #203357);
     height: 8vh;
 }
 
@@ -185,7 +185,7 @@ main{
 
 .link_list{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -199,7 +199,7 @@ main{
     margin-right: 60vw;
     letter-spacing: 4px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -273,80 +273,89 @@ main{
 
 /* sobre o isaque */
 .section-um{
+    background: linear-gradient(245deg, #203357,#0F687E);
     position: relative;
     display: flex;
+    padding: 60px;
     justify-content: space-around;
     justify-items: center;
     width: 100vw;
     height: 100vh;
 }
+.traco{
+    position: absolute;
+width: 419.2px;
+height: 4.87px;
+left: 1px;
+top: 170px;
+
+background-color: #fff;
+border-radius: 4px;
+transform: matrix(-1, 0.01, 0, -1, 0, 0);
+}
+.traco1{
+    border: #fff 3px solid;
+    position: absolute;
+    width: 409.69px;
+    height: 0px;
+    left: 980px;
+    top: 660px;
+
+transform: matrix(-1, 0.01, 0, -1, 0, 0);
+border-radius: 4px;
+}
 .card{
-    flex: 0 0 100%;
-    padding: 30px;
-    scroll-snap-align: start;
-    border-radius: 25px;
-    background: #ee7bd3;
-    height: 40rem;
-}
-.conteudo{
-    display: flex;
-   
-    width: 90rem;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 25px;
-    column-gap: 20px;
-}
-#card_prev{
-    position: relative;
-    right: 85rem;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background: transparent;
-    outline: none;
-    cursor: pointer;
-    font-size: 40px;
-}
-#card_prev:hover{
-    transition: .3s ease-in;
-    background-color: black;
-    opacity: 0.5;
-}
-
-
-.cards{
     display: flex;
     flex-direction: column;
-    margin-top: 8em;
-    height: 40rem;
-    width: 33rem;
+    margin-top: 10em;
+    height: 20rem;
+    width: 23rem;
+    margin-right: 10rem;
 }
-.card1:hover{
-    transform: translate3d(20%);
-    transition: .5s ease-in-out;
-}
-#card1{
-    background: url(/imagem/foto1.jfif);
+
+#Card1{
+    background: url(/trabalho_fotografia-master/imagem/foto1.jfif);
     background-size: cover;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 6px 6px 12px 0;
 }
 #card2{
-    background: url(/imagem/foto2.jfif);
+    background: url(/trabalho_fotografia-master/imagem/foto2.jfif);
     background-size: cover;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 6px 6px 12px 0;
 }
 #card3{
     background: url(/imagem/foto3.jfif);
     background-size: cover;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 6px 6px 12px 0;
 }
-@media (max-width: 950px){
-    .cards{
-        display: block;
-        margin: 40px;
+
+@media (max-width: 390px){
+    .card{
+        display: flex;
+        margin: 15px;
         transition: .5s ease-in;
+        height: 8rem;
+        width: 13rem;
+    }
+    #Card1{
+        background: url(/trabalho_fotografia-master/imagem/foto1.jfif);
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 6px 6px 12px 0;
+    }
+    #card2{
+        background: url(/trabalho_fotografia-master/imagem/foto2.jfif);
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 6px 6px 12px 0;
+    }
+    #card3{
+        background: url(/imagem/foto3.jfif);
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 6px 6px 12px 0;
     }
 }

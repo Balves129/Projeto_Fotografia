@@ -15,19 +15,3 @@ function prev(){
 
 setInterval(next, 5000);
 
-let cards = document.querySelectorAll('.card');
-let i_cards = 0;
-
-function card_next(){
-    cards[i_cards].classList.remove('active');
-    i_cards = (i_cards + 1) % cards.length;
-    cards[i_cards].classList.add('active');
-}
-
-function card_prev(){
-    cards[i_cards].classList.remove('active');
-    i_cards = (i_cards - 1 + cards.length) % cards.length;
-    cards[i_cards].classList.add('active');
-}
-
-setInterval(next, 5000);
