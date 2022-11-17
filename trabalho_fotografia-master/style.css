@@ -5,6 +5,7 @@
 }
 body{
     overflow-x: hidden;
+    background-color: #0F687E;
 }
 /* slides */
 
@@ -358,4 +359,182 @@ border-radius: 4px;
         border-radius: 20px;
         box-shadow: 6px 6px 12px 0;
     }
+}
+.section-dois{
+    background: url(/trabalho_fotografia-master/imagem/imagemfoto.jpg) ;
+    background-size: cover;
+    display: flex;
+    padding: 60px;
+    justify-content: space-around;
+    justify-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+
+
+/* titulos do isaque */
+.main-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+    flex-wrap: wrap;
+  
+ }
+ 
+ .main-title h1{
+     font-size: 30px;
+     color: rgb(177, 175, 175);
+     
+     font-family: "Poppins";
+     font-weight: bold;
+     letter-spacing: 2px;
+     
+ 
+ }
+ 
+ .main-title h2{
+     color: #ca1d1d;
+     font-size: 50px;
+     font-family: "Hanuman";
+     font-weight: bold;
+     letter-spacing: 2px;
+ }
+ 
+ .main-title h5{
+     color: rgb(177, 175, 175);;
+     font-size: 15px;
+     font-family: "Hanuman";
+     letter-spacing: 2px;
+     font-weight: 200;
+     
+ 
+ }
+ 
+ .main-title button{
+     width: 25%;
+     margin-top: 80px;
+     padding: 8px 5px;
+     font-size: 20px;
+     background-color: #15b678;
+     border-radius: 50px;
+     color: #FBF7F7;
+     font-family:"Inter" ;
+     cursor: pointer;
+     transition-duration: .9s;
+    
+ }
+ 
+ .main-title button:hover{
+     border: solid 1px rgb(75, 81, 82);
+     transition: 0.7s;
+     background: rgb(44, 179, 189);
+     
+   
+ }
+
+ /* =============Roda-pé================== */
+ .C-rodapé{
+    width: 100%;
+    background-color: #383535;
+    padding: 50px;
+}
+
+.C-rodapé h1{
+    text-align: center;
+    color: #fff;
+    font-family: "Inria Sans";
+    font-weight: lighter;
+}
+
+.C-rodapé form input:first-child{
+   display: inline-block;
+   width: 100%;
+   padding: 14px 50px 14px 15px;
+   border-radius: 30px;
+   outline: none;
+   border: none;
+   margin-top: 25px;
+}
+
+.C-rodapé form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #C229AA;
+    color: #fff;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    right: 100px;
+    margin-top: 28px;
+    width: 150px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.C-rodapé form input:last-child:hover{
+    transform: scale(1.1);
+    transition-duration: 0.9s;
+}
+
+@media only screen and (max-width: 414px){
+
+    .C-rodapé form input:last-child{
+        width: 100px;
+        
+    }
+
+}
+/* =============== sobre isaque ================== */
+.Card-sobre{
+    margin-left: 160px;
+}
+.Card-sobre button{
+    height: 60px;
+    width: 60px;
+    background-color: #EF0453;
+    margin-left: 25%;
+    margin-top: 30px;
+    padding: 10px 50px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
+    transition-duration: .9s;
+
+}
+
+.Card-sobre button:hover{
+    color: #EF0453;
+    transform: translate(0.9);
+    transition: 0.8s;
+    background: transparent;
+    
+}
+
+@media only screen and (max-width: 414px){
+
+    /*================Sobre-mim ================*/
+
+
+
+
+    .Card-sobre p{
+        font-size: 12px;
+        width: 500px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .Card-sobre button{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
 }
